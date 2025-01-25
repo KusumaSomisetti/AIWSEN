@@ -3,6 +3,4 @@ AIWSEN: Adaptive Information Weighting and Synchronized Enhancement Network for 
 
 Welcome to the repository for our paper: "AIWSEN: Adaptive Information Weighting and Synchronized Enhancement Network for Hyperspectral Change Detection."
 
-Coming Soon!
-
-We are in the process of preparing the code and models for release.
+> L. Wu, J. Peng, B. Yang, W. Sun and Z. Ye, "AIWSEN: Adaptive Information Weighting and Synchronized Enhancement Network for Hyperspectral Change Detection," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2025.3531478. 
