@@ -5,7 +5,9 @@ Welcome to the repository for our paper: "AIWSEN: Adaptive Information Weighting
 
 ### Requirements
 torch 1.7.1 + cu101
+
 python 3.7
+
 torchvision 0.8.2 + cu101
 
 
