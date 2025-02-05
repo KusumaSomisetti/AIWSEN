@@ -21,4 +21,16 @@ If you need to replace the dataset, please update the dataset files in the AWISE
 ### Citation
 Please cite our paper if you use this code in your research.
 
-> L. Wu, J. Peng, B. Yang, W. Sun and Z. Ye, "AIWSEN: Adaptive Information Weighting and Synchronized Enhancement Network for Hyperspectral Change Detection," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2025.3531478. 
+> L. Wu, J. Peng, B. Yang, W. Sun and Z. Ye, "AIWSEN: Adaptive Information Weighting and Synchronized Enhancement Network for Hyperspectral Change Detection," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2025.3531478.
+>
+> @ARTICLE{10845805,
+  author={Wu, Lanxin and Peng, Jiangtao and Yang, Bing and Sun, Weiwei and Ye, Zhijing},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={AIWSEN: Adaptive Information Weighting and Synchronized Enhancement Network for Hyperspectral Change Detection}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Feature extraction;Transformers;Entropy;Data mining;Convolutional neural networks;Sun;Fuses;Synchronization;Hyperspectral imaging;Attention mechanisms;Hyperspectral image;change detection;adaptive information weighting;synchronic enhancing},
+  doi={10.1109/TGRS.2025.3531478}}
+
