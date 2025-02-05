@@ -12,7 +12,11 @@ torchvision 0.8.2 + cu101
 
 imageio  2.31.2
 
-The main function for training is train_HSI, and the specific hyperparameter settings can be found in configs/configs.py
+The main function for training is AWISEN/train_HSI.py. 
+
+The specific hyperparameter settings can be found in AWISEN/configs/configs.py.
+
+If you need to replace the dataset, please update the dataset files in the datasets/ directory and modify the corresponding settings in /data/get_dataset.py.
 
 ### Citation
 Please cite our paper if you use this code in your research.
