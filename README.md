@@ -12,6 +12,7 @@ torchvision 0.8.2 + cu101
 
 imageio  2.31.2
 
+The main function for training is train_HSI, and the specific hyperparameter settings can be found in configs/configs.py
 
 ### Citation
 Please cite our paper if you use this code in your research.
