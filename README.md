@@ -19,28 +19,21 @@ The specific hyperparameter settings can be found in AWISEN/configs/configs.py.
 If you need to replace the dataset, please update the dataset files in the AWISEN/datasets/ directory and modify the corresponding settings in AWISEN/data/get_dataset.py.
 
 ### Citation
-Please cite our paper if you use this code in your research.
+If you find this work helpful, please cite our paper:
 
 > L. Wu, J. Peng, B. Yang, W. Sun and Z. Ye, "AIWSEN: Adaptive Information Weighting and Synchronized Enhancement Network for Hyperspectral Change Detection," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2025.3531478.
 
-@ARTICLE{10845805,
 
+```bibtex
+@ARTICLE{10845805,
   author={Wu, Lanxin and Peng, Jiangtao and Yang, Bing and Sun, Weiwei and Ye, Zhijing},
-  
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  
   title={AIWSEN: Adaptive Information Weighting and Synchronized Enhancement Network for Hyperspectral Change Detection}, 
-  
   year={2025},
-  
   volume={},
-  
   number={},
-  
   pages={1-1},
-  
-  keywords={Feature extraction;Transformers;Entropy;Data mining;Convolutional neural networks;Sun;Fuses;Synchronization;Hyperspectral imaging;Attention mechanisms;Hyperspectral image;change detection;adaptive information 
-  weighting;synchronic enhancing},
-  
-  doi={10.1109/TGRS.2025.3531478}}
+  keywords={Feature extraction;Transformers;Entropy;Data mining;Convolutional neural networks;Sun;Fuses;Synchronization;Hyperspectral imaging;Attention mechanisms;Hyperspectral image;change detection;adaptive information weighting;synchronic enhancing},
+  doi={10.1109/TGRS.2025.3531478}
+
 
