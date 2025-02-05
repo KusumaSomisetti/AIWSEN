@@ -32,7 +32,7 @@ If you find this work helpful, please cite our paper:
   year={2025},
   volume={},
   number={},
-  pages={1-1},
+  pages={1-12},
   keywords={Feature extraction;Transformers;Entropy;Data mining;Convolutional neural networks;Sun;Fuses;Synchronization;Hyperspectral imaging;Attention mechanisms;Hyperspectral image;change detection;adaptive information weighting;synchronic enhancing},
   doi={10.1109/TGRS.2025.3531478}
 
