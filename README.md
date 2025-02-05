@@ -10,6 +10,8 @@ python 3.7
 
 torchvision 0.8.2 + cu101
 
+imageio  2.31.2
+
 
 ### Citation
 Please cite our paper if you use this code in your research.
