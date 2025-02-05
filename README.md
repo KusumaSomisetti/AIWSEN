@@ -16,7 +16,7 @@ The main function for training is AWISEN/train_HSI.py.
 
 The specific hyperparameter settings can be found in AWISEN/configs/configs.py.
 
-If you need to replace the dataset, please update the dataset files in the datasets/ directory and modify the corresponding settings in /data/get_dataset.py.
+If you need to replace the dataset, please update the dataset files in the AWISEN/datasets/ directory and modify the corresponding settings in AWISEN/data/get_dataset.py.
 
 ### Citation
 Please cite our paper if you use this code in your research.
