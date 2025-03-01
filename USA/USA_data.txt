@@ -1,5 +1,0 @@
-    data_set_before = loadmat("./datasets/USA/USA1.mat")['T1']
-    data_set_after = loadmat("./datasets/USA/USA2.mat")['T2']
-    ground_truth = loadmat('./datasets/USA/USAGT.mat')['GT']
-    ground_truth[ground_truth == 1] = 1
-    ground_truth[ground_truth == 2] = 0
