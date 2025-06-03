@@ -44,7 +44,10 @@ class EntropyWeighting(nn.Module):
         b, c, h, w = x.size()
         if not self.initialized or self.positional_encoding.size() != (1,) + x.size()[1:]:
             self.initialize_positional_encoding(*x.size()[1:])
-        x = x + self.positional_encoding.expand_as(x)
+        
+        # ✅ Fix: Move positional_encoding to same device as x
+        x = x + self.positional_encoding.to(x.device).expand_as(x)
+        
         x_flat = x.view(b, c, h * w)
         x_exp = torch.exp(x_flat)
         data_sum = torch.sum(x_exp, dim=2, keepdim=True)
@@ -343,8 +346,8 @@ class AIWSEN(nn.Module):
             for i_emb, i_layer in enumerate(self.out_indices):
                 if i_emb == 0 and os.environ.get('FORK_LAST3', None):
                     # TODO: more elegant way
-                    """For RetinaNet, `start_level=1`. The first norm layer will not used.
-                    cmd: `FORK_LAST3=1 python -m torch.distributed.launch ...`
+                    """For RetinaNet, start_level=1. The first norm layer will not used.
+                    cmd: FORK_LAST3=1 python -m torch.distributed.launch ...
                     """
                     layer = nn.Identity()
                 else:
@@ -436,4 +439,4 @@ class AIWSEN(nn.Module):
 
         final_out = self.softmax(deep_out)
 
-        return final_out
+        return final_out 
