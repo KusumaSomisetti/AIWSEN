@@ -65,9 +65,10 @@ def main():
     # Store
     save_folder = cfg_test['save_folder']
     save_name = cfg_test['save_name']
+    
+    # ✅ FIX: Recursively create the directory if needed
+    os.makedirs(save_folder, exist_ok=True)
 
-    if not os.path.exists(save_folder):
-        os.mkdir(save_folder)
 
     io.savemat(save_folder + '/' + save_name + ".mat",
                {"predict_img": np.array(predict_img.cpu()), "oa": assessment_result})
