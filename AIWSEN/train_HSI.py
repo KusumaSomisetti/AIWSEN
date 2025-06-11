@@ -16,6 +16,7 @@ from model.AIWSEN import AIWSEN as fun_model
 
 
 def main():
+    
 
     current_dataset = cfg.current_dataset
     current_model = cfg.current_model
@@ -24,9 +25,13 @@ def main():
     cfg_data = cfg.data
     cfg_model = cfg.model
     cfg_train = cfg.train['train_model']
+    cfg_train['save_folder'] = '/kaggle/working/weights'
     cfg_optim = cfg.train['optimizer']
     cfg_test = cfg.test
-
+    cfg_test['model_weights'] = '/kaggle/working/weights/Santabarbara_AIWSEN_Final.pth'
+    cfg_test['save_folder'] = '/kaggle/working/weights/Santabarbara'
+    cfg_test['save_name'] = 'Santabarbara_AIWSEN'
+    os.makedirs(cfg_test['save_folder'], exist_ok=True)
     use_cuda = torch.cuda.is_available()
     device = torch.device('cuda' if use_cuda else 'cpu')
 
@@ -79,4 +84,3 @@ def main():
 if __name__ == '__main__':
 
     main()
-
