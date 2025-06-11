@@ -1,4 +1,4 @@
-current_dataset = 'Farmland'
+current_dataset = 'Santabarbara'
 current_model = '_AIWSEN'
 
 current = current_dataset + current_model
@@ -64,6 +64,3 @@ test = dict(
     save_name=current,
     save_folder='./result' + '/' + current_dataset
 )
-
-
-
